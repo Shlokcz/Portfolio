@@ -56,13 +56,13 @@ const Projects = forwardRef((props, ref) =>  {
         <section className={styles.project} ref={ref}>
             <h1>Projects</h1>
             <div className={styles.slider_container}>
-                <button className={styles.prev} onClick={() => moveSlide(-1)}><img src="/images/left_arrow.png" /></button>
+                <button className={styles.prev} onClick={() => moveSlide(-1)}><img src="/images/left_arrow.png" alt="projects"/></button>
                 <div className={styles.project_container}>
                     <img src={projects[currentIndex].src} alt="projects" />
                     <h2>{projects[currentIndex].title}</h2>
                     <p>{projects[currentIndex].description}</p>
                 </div>
-                <button className={styles.next} onClick={() => moveSlide(1)}><img src="/images/right_arrow.png" /></button>
+                <button className={styles.next} onClick={() => moveSlide(1)}><img src="/images/right_arrow.png" alt="projects"/></button>
             </div>
         </section>
     );
