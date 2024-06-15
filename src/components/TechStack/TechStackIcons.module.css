@@ -1,0 +1,19 @@
+.icons h2{
+    font-size: 20px;
+    
+}
+
+.icons img{ 
+    height: 110px;
+    width: 110px;
+    
+}
+
+.star{
+    font-size: 1.17rem;
+    margin-left: 16px;
+}
+
+.greenStar{
+    color: green;
+}

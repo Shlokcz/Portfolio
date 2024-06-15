@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.techStack{
+    /* background-color: rgb(134, 134, 255); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    /* margin-top: 25px; */
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(246, 246, 246);
+    background-image:url('/public/images/bg5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border-top: 2px solid rgb(223, 223, 223); */
+    
+}
+
+.techStack h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 15px;
+    background: linear-gradient(
+    90deg,
+    #2b2b2b,
+    #8b0000
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+
+}
+
+.icons{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 250px;
+  padding-bottom: 30px;
+  /* cursor: pointer; */
+}
+
+@media(max-width: 650px){
+  .techStack h1{
+    text-align: center;
+  }
+}
+
+@media(max-width: 535px){
+  .icons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
