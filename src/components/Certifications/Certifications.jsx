@@ -46,7 +46,7 @@ const Certifications = forwardRef((props, ref) =>  {
             <div className={styles.certiContainer} >
                 {certi.map(item => (
                     <div key={item.id} className={styles.box1}>
-                        <a href={item.link} target="_blank"><img src={item.src} alt="certificate" /></a>
+                        <a href={item.link} target="_blank" rel="noreferrer"><img src={item.src} alt="certificate" /></a>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
                     </div>
