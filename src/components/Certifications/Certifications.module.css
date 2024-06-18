@@ -11,10 +11,13 @@
     font-family: "Roboto", sans-serif;
     border-top: 2px solid rgb(226, 226, 226);
     background-image: url(/public/images/bg6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .certi h1{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 300;
     background: linear-gradient(
       90deg,
@@ -26,10 +29,15 @@
 }
 
 .certiContainer{
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    gap: 40px;
     /* flex-direction: column; */
     max-width: 85%;
     padding: 25px;
+    /* height: 500px; */
+    width: fit-content;
 }
 
 .box1{
@@ -37,13 +45,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px 30px;
+    margin: 0px 10px;
     padding: 10px;
     /* padding-top: 25px; */
     border-radius: 10px;
     background-color: white;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     opacity: 0.9;
+    /* align-items: center; */
 }
 
 .box1 img{

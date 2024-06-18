@@ -16,11 +16,12 @@
     background-position: center;
     background-repeat: no-repeat;
     /* border-top: 2px solid rgb(223, 223, 223); */
+    transition: height 0.4s ease;
     
 }
 
 .techStack h1{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 300;
     margin-top: 15px;
     background: linear-gradient(
@@ -43,15 +44,37 @@
   /* cursor: pointer; */
 }
 
+@media (max-width: 1100px){
+  .techStack{
+    height: 700px;
+  }
+  .icons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transition: grid-template-columns 1s ease;
+  }
+}
+
 @media(max-width: 650px){
   .techStack h1{
     text-align: center;
   }
 }
 
+
 @media(max-width: 535px){
   .icons{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 170px;
+    transition: gap 0.5s ease-in-out;
+  }
+  .techStack{
+    height: 570px;
+  }
+}
+
+@media (max-width: 390px) {
+  .icons{
+    gap: 10px 120px;
+    transition: gap 0.5s ease;
   }
 }

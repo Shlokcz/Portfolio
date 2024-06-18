@@ -43,6 +43,10 @@
     font-size: 16px;
 }
 
+.link{
+    color: white;
+}
+
 .talkHeading p{
     color: #ebb400;
     margin-top: 15px;
@@ -97,4 +101,59 @@
     margin: 10px 0px;
     padding: 10px 0px;
 
+}
+
+@media(max-width: 1050px) {
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .links h2{
+        margin-top: 20px;
+    }
+    .links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .footer{
+        flex-direction: column;
+        height: 450px;
+    }
+    .social{
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+@media (max-width:650px) {
+    .talkHeading button{
+        width: fit-content;
+        padding: 6px 12px;
+    }
+    .talkHeading p{
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 560px) {
+    .talkHeading p{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 410px) {
+    .footer{
+        height: 490px;
+    }
+    .talkHeading h2{
+        text-align: center;
+    }
+    .talkHeading p{
+        max-width: 340px;
+    }
 }

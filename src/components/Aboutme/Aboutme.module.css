@@ -7,15 +7,15 @@
     justify-content: center;
     font-family: "Roboto", sans-serif;
     /* margin-top: 30px; */
-    height: 500px;
-    /* background-image:url('/public/images/bg2.jpg'); */
+    height: 530px;
+    background-image:url('/public/images/about_img.png');
     background-size: cover;
-    background-position: center;
+    /* background-position: ; */
     background-repeat: no-repeat;
 }
 
 .aboutme h1{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 300;
     background: linear-gradient(
       90deg,
@@ -58,4 +58,61 @@
 .box p{
     max-width: 70%;
     text-align: justify;
+}
+
+@media (max-width: 1350px) {
+    .aboutme{
+        height: 560px;
+        transition: height 0.4s ease;
+    }
+}
+
+@media (max-width: 770px){
+    .aboutme{
+        height: 660px;
+        transition: height 0.4s ease;
+    }
+}
+
+@media (max-width: 762px){
+    .aboutme{
+        height: 660px;
+        transition: height 0.3s ease;
+    }
+    .rows{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box{
+        padding: 10px;
+        margin: 10px 15px;
+    }
+    .box h2{
+        font-size: 20px;
+    }
+    .box p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .aboutme h2{
+        font-size: 18px;
+        transition: font-size 0.5s ease;
+    }
+}
+
+@media (max-width: 426px) {
+    .aboutme{
+        height: 700px;
+    }
+    .aboutme h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 376px) {
+    .aboutme{
+        height: 740px;
+        transition: height 0.5s ease;
+    }
 }

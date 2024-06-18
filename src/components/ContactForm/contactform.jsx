@@ -1,8 +1,12 @@
 import emailjs from "emailjs-com";
 import styles from "./contactform.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = ({ onClose }) => {
+
+    const navigate = useNavigate();
+
     const [formData, setFormData] = useState({
       name: '',
       email: '',
@@ -24,6 +28,9 @@ const ContactForm = ({ onClose }) => {
         .then((response) => {
           console.log('SUCCESS!', response.status, response.text);
           alert('Message sent successfully!');
+
+          navigate('/');
+
           onClose(); // Close the form after submission
         })
         .catch((err) => {

@@ -11,6 +11,16 @@ const Projects = forwardRef((props, ref) =>  {
             description: 'This is my Portfolio Website.'
         },
         {
+            src:"/images/Nike_page.png",
+            title: 'Nike Custom Page',
+            description: 'A custom made Nike Frontend Page with all the functionalities.'
+        },
+        {
+            src:"/images/contact_page.png",
+            title: 'Contact Page',
+            description: 'Attach this responsive Contact Page in any of your websites'
+        },
+        {
             src:"/images/muzify.png",
             title: 'Muzify Music Listener',
             description: 'This is a single page application where you can store your music and listen to it whenever you want.'
@@ -20,6 +30,16 @@ const Projects = forwardRef((props, ref) =>  {
             title: 'Simon Game',
             description: 'Its a simple game where you can challenge your muscle memory and try to remember the patterns.'
         },
+        {
+            src:"/images/drum_kit.png",
+            title: 'Drum Kit',
+            description: 'Take out your hidden Musician and go crazy with all the Instruments'
+        },
+        {
+            src:"/images/Random_dice_game.png",
+            title: 'Random Dice Game',
+            description: 'Refresh to test your Fate through this Dice Game. If your Dice comes larger you win ptherwise you loose.'
+        }
     ];
 
     const moveSlide = (direction) => {

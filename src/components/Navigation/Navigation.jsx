@@ -15,7 +15,7 @@ function Navigation({ onScrollToSection, onScrollToSection2 }) {
         <h3 className={styles.typewriter}>{text}</h3>
 
         <ul>
-            <li className={styles.contactme}><Link to="/contact" className={styles.link}>Contact Me</Link></li>
+            <li className={styles.contactme}><Link to="/contact" className={styles.link}>Contact</Link></li>
             <li className={styles.certi} onClick={onScrollToSection}>Certificates</li>
             <li className={styles.project} onClick={onScrollToSection2}>Projects</li>
         </ul>
