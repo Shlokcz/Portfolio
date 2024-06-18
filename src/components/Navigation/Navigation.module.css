@@ -113,9 +113,6 @@ background-color: #ebb400;
 }
 
 @media (max-width: 790px) {
-    .navigation{
-        
-    }
     .navigation h3{
         display: none;
     }
