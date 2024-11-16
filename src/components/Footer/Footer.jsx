@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css"
 import { Link } from "react-router-dom";
+import { Tilt } from "react-tilt";
 
 function Footer({onScrollToSection, onScrollToSection2,onScrollToSection3}) {
 
@@ -25,9 +26,9 @@ function Footer({onScrollToSection, onScrollToSection2,onScrollToSection3}) {
                 </div>
                 <div className={styles.social}>
                     <h2>Social</h2>
-                    <a href="https://www.linkedin.com/in/shlok-gupta-46a66a18b/?trk=opento_sprofile_topcard"><img src="/images/linkedin.png" alt="linkedin" /></a>
-                    <a href="https://www.instagram.com/shlok_0710?igsh=MTFzN3U3aXM1ZGZ0cA%3D%3D&utm_source=qr"><img src="/images/instagram.png" alt="instagram" /></a>
-                    <a href="https://github.com/Shlokcz"><img src="/images/github.png" alt="github" /></a>
+                    <a href="https://www.linkedin.com/in/shlok-gupta-46a66a18b/?trk=opento_sprofile_topcard"><Tilt><img src="/images/linkedin.png" alt="linkedin" /></Tilt></a>
+                    <a href="https://www.instagram.com/shlok_0710?igsh=MTFzN3U3aXM1ZGZ0cA%3D%3D&utm_source=qr"><Tilt><img src="/images/instagram.png" alt="instagram" /></Tilt></a>
+                    <a href="https://github.com/Shlokcz"><Tilt><img src="/images/github.png" alt="github" /></Tilt></a>
                 </div>
             </div>
             <div className={styles.copyright}>
